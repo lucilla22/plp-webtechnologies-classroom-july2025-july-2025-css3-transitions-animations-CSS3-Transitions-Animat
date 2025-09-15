@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Interactive Web Page with CSS & JS</h1>
+    </header>
+
+    <main>
+        <section id="css-effects">
+            <h2>Part 1: CSS Effects</h2>
+            <div class="card fade-in-on-load">
+                <h3>Card 1</h3>
+                <p>This card uses a CSS keyframe animation to fade in when the page loads.</p>
+            </div>
+            <div class="button-container">
+                <button id="hover-button" class="btn">Hover Over Me</button>
+            </div>
+        </section>
+
+        <section id="js-functions">
+            <h2>Part 2: JavaScript Functions</h2>
+            <div class="function-demo">
+                <p>Click the button below to see a reusable function in action.</p>
+                <button id="calculate-button" class="btn">Calculate Value</button>
+                <p id="calculation-output">Result will appear here.</p>
+            </div>
+        </section>
+
+        <section id="js-css-combo">
+            <h2>Part 3: Combining CSS & JS</h2>
+            <div class="combo-demo">
+                <p>Click the button to animate the box.</p>
+                <button id="animate-box-button" class="btn">Animate Box</button>
+                <div id="animated-box" class="box"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
