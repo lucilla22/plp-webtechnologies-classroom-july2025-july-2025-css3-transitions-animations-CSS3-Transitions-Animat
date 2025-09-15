@@ -1,0 +1,85 @@
+/* General Body & Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* --- */
+/* Part 1: CSS Transitions and Animations */
+
+/* Button Hover Effect with Transition */
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px); /* Moves the button up slightly */
+}
+
+/* Card Fade-in Animation */
+.card {
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Keyframe for the fade-in effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-on-load {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+/* --- */
+/* Part 3: CSS Classes for JavaScript Interaction */
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #28a745;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: transform 0.5s ease-in-out, background-color 0.5s ease;
+}
+
+/* Class to be added/removed by JavaScript */
+.animate-slide {
+    background-color: #ffc107;
+    transform: translateX(150px) rotate(90deg);
+}
